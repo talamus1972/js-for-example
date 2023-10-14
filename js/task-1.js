@@ -1,9 +1,15 @@
-function slugify(title) {
-  const words = title.split(" ");
-  return words.join("-").toLowerCase();
+function calculateTotal(number) {
+  let cat = 0;
+while (let dog = 1; dog <= number; dog += 1) {
+  cat += 1;
+   
+}
+ return cat;
 }
 
-console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
-console.log(slugify("English for developer")); // "english-for-developer"
-console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
-console.log(slugify("How to become a JUNIOR developer in TWO WEEKS")); // "how-to-become-a-junior-developer-in-two-weeks"
+calculateTotal(1); //повертає 1
+console.log(calculateTotal(3)); //повертає 6
+calculateTotal(0); //повертає 0
+calculateTotal(18); //повертає 171
+calculateTotal(24); //повертає 300
+calculateTotal();
