@@ -1,9 +1,12 @@
 function getSlice(array, value) {
-    const index = array.indexOf(value);
-
-        return index === -1  ?
-        array.slice(0, 0) : array.slice(0, index); 
-   
+    for (let i = 0; i < array.length; i++){
+        if (array[i] === value) {
+            return array.slice(0, i + 1);
+        }     
+               
+           
+    }        
+   return array.slice(0, 0);
 }
 
 
