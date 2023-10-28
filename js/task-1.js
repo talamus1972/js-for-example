@@ -25,15 +25,15 @@
 // calculateTotalPrice([164, 48, 291]); //повертає 503
 // calculateTotalPrice([412, 371, 94, 63, 176]); //повертає 1116
 
-function getEvenNumbers(start, end) {
-  for (let i = start; i < end.length; i++) {
-    if (i % 2 === 0) {
-      console.log(i);
-      //   return [index];
-      // } else {
-      //   return [];
-      // }
-    }
-  }
-}
-// console.log(getEvenNumbers(2, 5)); //[2, 4]
+// function getEvenNumbers(start, end) {
+//   for (let i = start; i < end.length; i++) {
+//     if (i % 2 === 0) {
+//       console.log(i);
+//       //   return [index];
+//       // } else {
+//       //   return [];
+//       // }
+//     }
+//   }
+// }
+// // console.log(getEvenNumbers(2, 5)); //[2, 4]
