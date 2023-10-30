@@ -12,7 +12,7 @@
 // console.log(createArrayOfNumbers(29, 34));
 // // // //повертає [29, 30, 31, 32, 33, 34]
 
-
+// =======================================================================
 
 // function checkStorage(storage, item) {
 //   const items = item.toLowerCase();
@@ -30,6 +30,9 @@
 // console.log(checkStorage(['apple', 'plum', 'pear'], 'pEAr')); //повертає "pear is available to order!"
 // console.log(checkStorage(['apple', 'plum', 'pear'], 'orange')); //повертає "Sorry! We are out of stock!"
 // console.log(checkStorage(['apple', 'plum', 'pear'], 'carrot')); //повертає "Sorry! We are out of stock!"
+
+// ====================================================================================
+
 
 // const apartment = {
 //   imgUrl: "https://via.placeholder.com/640x480",
@@ -50,7 +53,7 @@
 // apartment.location.country = "Jamaica";
 // apartment.location.city = "Kingston";
 
-
+// ===================================================================================
 
 // console.log(apartment);
 
@@ -71,6 +74,10 @@
 // console.log(keys); // logs ["descr", "rating", "price"]
 // console.log(values); // logs ["Spacious apartment in the city center", 4, 2153]
 
+// =============================================================================================
+
+
+
 // const apartment = {
 //   descr: "Spacious apartment in the city center",
 //   rating: 4,
@@ -86,20 +93,40 @@
 // console.log(keys);
 // console.log(values);
 
-function countProps(object) {
+
+// ============================================================================
 
 
-    // const keys = Object.keys(object);
+// function countProps(object = {}) {
+//   const keys = Object.keys(object);
+//   let count = 0;
 
+//   for (const key of keys) {
+//     count += 1;
+//   }
 
-  for (let i = 0; i < object.length; i++) {
-   
-    console.log(i.length);
-  }
-  
-  
-}
+//   return count;
+// }
 
-console.log(countProps({})); //повертає 0
-console.log(countProps({ name: "Mango", age: 2 })); //повертає 2
-console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); ///повертає 3
+// console.log(countProps({})); //повертає 0
+// console.log(countProps({ name: "Mango", age: 2 })); //повертає 2
+// console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 })); ///повертає 3
+
+// =================================================================================
+
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+    
+//     const values = Object.values(salaries);
+//     for (const key of values) {
+
+//         totalSalary += key; 
+//   }
+
+//     return totalSalary;
+
+// }
+
+// console.log(countTotalSalary({})); //повертає 0
+// console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 })); //повертає 330
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) );//повертає 400
