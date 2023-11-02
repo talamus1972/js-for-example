@@ -63,19 +63,19 @@
 // console.log(add(12, 4, 11, 48)); //повертає 75
 // console.log(add(32, 6, 13, 19, 8)); //повертає 78
 
-function addOverNum(first, ...args) {
+// function addOverNum(first, ...args) {
 
-     let sum = 0;
-    for (let i = 0; i < args.length; i += 1) {
-        if (args[i] > first) {
-         sum += args[i];
-     }
+//      let sum = 0;
+//     for (let i = 0; i < args.length; i += 1) {
+//         if (args[i] > first) {
+//          sum += args[i];
+//      }
         
-  }
-  return sum;
-}
+//   }
+//   return sum;
+// }
 
-console.log(addOverNum(50, 15, 27)); //повертає 0
-console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); //повертає 71
-console.log(addOverNum(15, 32, 6, 13, 19, 8)); //повертає 51
-console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); //повертає 218
+// console.log(addOverNum(50, 15, 27)); //повертає 0
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); //повертає 71
+// console.log(addOverNum(15, 32, 6, 13, 19, 8)); //повертає 51
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); //повертає 218
