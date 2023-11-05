@@ -79,3 +79,70 @@
 // console.log(addOverNum(10, 12, 4, 11, 48, 10, 8)); //повертає 71
 // console.log(addOverNum(15, 32, 6, 13, 19, 8)); //повертає 51
 // console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); //повертає 218
+
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//     orderedItems.forEach(function (number) {
+//         totalPrice += number
+        
+//     }
+//     )
+//     return totalPrice;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4])); //повертає 138
+// console.log(calculateTotalPrice([164, 48, 291])); //повертає 503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); //повертає 1116
+
+
+
+// function filterArray(numbers, value) {
+//     let newNumbers = [];
+    
+//     numbers.forEach(function (number) {
+//         if (number > value) {
+//             newNumbers.push(number);
+//         }
+//     });
+    
+//     return newNumbers;
+// }
+
+
+
+
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); //повертає [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); //повертає [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); //повертає []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); //повертає [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); //повертає [24, 41, 76]
+
+// function changeEven(numbers, value) {
+//     let newNumbers = [];
+//     numbers.forEach(number => {
+//         if (number % 2 === 0) {
+//            newNumbers.push(number + value);
+//         }
+//         else {
+//             newNumbers.push(number);
+// }
+//     }  )
+//     return newNumbers;
+//     }
+
+
+
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// //повертає новий масив [1, 12, 3, 14, 5]
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+
+// const planetsLengths = planets.map(planet => 
+// planet.length
+// );
+
+// console.log(planetsLengths);
