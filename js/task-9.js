@@ -141,8 +141,28 @@
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
 
 
-// const planetsLengths = planets.map(planet => 
+// const planetsLengths = planets.map(planet =>
 // planet.length
 // );
 
 // console.log(planetsLengths);
+
+const users = [ 
+ {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    skills: ["lorem", "veniam", "culpa"],
+    gender: "female",
+    age: 39,
+  },
+];
+
+const getUserEmails = (users) => {
+   return users.map(student.email);
+ };
+
+console.log(getUserEmails(users));
