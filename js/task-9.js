@@ -79,12 +79,106 @@
 // console.log(addOverNum(15, 32, 6, 13, 19, 8)); //повертає 51
 // console.log(addOverNum(20, 74, 11, 62, 46, 12, 36)); //повертає 218
 
-// function getExtremeScores(scores) {
-//   const best = Math.max(...scores);
-//   const worst = Math.min(...scores);
-//   return { best, worst };
+// function calculateTotalPrice(orderedItems) {
+//   let totalPrice = 0;
+
+//     orderedItems.forEach(function (number) {
+//         totalPrice += number
+
+//     }
+//     )
+//     return totalPrice;
 // }
 
-// console.log(getExtremeScores([89, 64, 42, 17, 93, 51, 26])); //повертає об'єкт { best: 93, worst: 17 }
-// console.log(getExtremeScores([19, 7, 4, 17, 81, 24])); //повертає об'єкт { best: 81, worst: 4 }
-// //Math.max() і Math.min() використовується синтаксис ... на масиві scores
+// console.log(calculateTotalPrice([12, 85, 37, 4])); //повертає 138
+// console.log(calculateTotalPrice([164, 48, 291])); //повертає 503
+// console.log(calculateTotalPrice([412, 371, 94, 63, 176])); //повертає 1116
+
+// function filterArray(numbers, value) {
+//     let newNumbers = [];
+
+//     numbers.forEach(function (number) {
+//         if (number > value) {
+//             newNumbers.push(number);
+//         }
+//     });
+
+//     return newNumbers;
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3)); //повертає [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)); //повертає [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)); //повертає []
+// console.log(filterArray([12, 24, 8, 41, 76], 38)); //повертає [41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 20)); //повертає [24, 41, 76]
+
+// function changeEven(numbers, value) {
+//     let newNumbers = [];
+//     numbers.forEach(number => {
+//         if (number % 2 === 0) {
+//            newNumbers.push(number + value);
+//         }
+//         else {
+//             newNumbers.push(number);
+// }
+//     }  )
+//     return newNumbers;
+//     }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+// //повертає новий масив [1, 12, 3, 14, 5]
+
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map(planet =>
+// planet.length
+// );
+
+// console.log(planetsLengths);
+
+// =======================================================
+
+const users = [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    skills: ['ipsum', 'lorem'],
+    gender: 'male',
+    age: 37,
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+    gender: 'female',
+    age: 34,
+  },
+];
+
+// // --------------------------------------
+// function getUserEmails(users) {
+//     const sum = [];
+//     const values = Object.values(users);
+//     for (const value of values) {
+//         sum.push(value.email);
+//     }
+// return sum;
+// }
+// console.log(getUserEmails(users));
+
+// // ---------------------OR-------------------
+
+const getUserEmails = users => {
+  return users.map(user => user.email);
+};
+
+// const userEmails = getUserEmails(users);
+// console.log(userEmails);
