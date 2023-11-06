@@ -147,22 +147,50 @@
 
 // console.log(planetsLengths);
 
+
+// =======================================================
+
 const users = [ 
- {
-    name: "Sheree Anthony",
-    email: "shereeanthony@kog.com",
-    eyeColor: "brown",
-    friends: ["Goldie Gentry", "Briana Decker"],
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    skills: ["ipsum", "lorem"],
+    gender: "male",
+    age: 37,
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
     isActive: true,
-    balance: 2764,
-    skills: ["lorem", "veniam", "culpa"],
+    balance: 3821,
+    skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
     gender: "female",
-    age: 39,
+    age: 34,
   },
 ];
 
-const getUserEmails = (users) => {
-   return users.map(student.email);
- };
+// // --------------------------------------
+// function getUserEmails(users) {
+//     const sum = [];
+//     const values = Object.values(users);
+//     for (const value of values) {
+//         sum.push(value.email);
+//     }
+// return sum; 
+// }
+// console.log(getUserEmails(users));
+ 
+// // ---------------------OR-------------------
 
-console.log(getUserEmails(users));
+const getUserEmails = (users) => {
+  return users.map(user => user.email);
+};
+
+// const userEmails = getUserEmails(users);
+// console.log(userEmails);
