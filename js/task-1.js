@@ -37,3 +37,36 @@
 //   }
 // }
 // // console.log(getEvenNumbers(2, 5)); //[2, 4]
+
+// -----------------------------------------------------------------------
+// function getFileName(file) {
+//     let lastDotPosition = file.lastIndexOf(".");
+
+//     return lastDotPosition === -1 ? file.slice(0) :
+//         file.slice(0, lastDotPosition);
+
+//     }
+
+console.log(getFileName('styles.css')); // "styles"
+console.log(getFileName('app.js')); // "app"
+console.log(getFileName('app')); // "app"
+console.log(getFileName('index.js')); // "index"
+console.log(getFileName('index.html')); // "index"
+console.log(getFileName('index.css')); // "index"
+console.log(getFileName('index')); //iпdex
+
+// -------------------------------------------------------------------------------------
+// function calculateEvenTotal(number) {
+//     let sum = 0;
+// for (let i = 0; i <= number; i += 2) {
+//      sum += i;
+// }
+
+//       return sum;
+// }
+
+console.log(calculateEvenTotal(1)); //0
+console.log(calculateEvenTotal(3)); //2
+console.log(calculateEvenTotal(7)); //12
+console.log(calculateEvenTotal(18)); //90
+console.log(calculateEvenTotal(27)); //182
