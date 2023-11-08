@@ -15,8 +15,16 @@ const pizzaPalace = {
 };
 
 pizzaPalace.order('Smoked'); //повертає рядок "Order accepted, preparing «Smoked» pizza"
+
 pizzaPalace.order('Four meats'); //повертає рядок "Order accepted, preparing «Four meats» pizza"
+
+console.log("🚀 ~ pizzaPalace;", pizzaPalace)
+
+
+console.log("🚀 ~ pizzaPalace;", pizzaPalace)
+
+
+console.log("🚀 ~ pizzaPalace;", pizzaPalace)
+
 pizzaPalace.order('Big Mike'); //повертає рядок "Sorry, there is no pizza named «Big Mike»"
 pizzaPalace.order('Viennese'); //повертає рядок "Sorry, there is no pizza named «Viennese»"
-console.log('🚀 ~ pizzaPalace;', pizzaPalace);
-console.log('🚀 ~ console;', console);
