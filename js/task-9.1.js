@@ -45,3 +45,44 @@
 // =========================================================================
 
 // https://www.freecodecamp.org/news/lets-learn-javascript-closures-66feb44f6a44
+
+// https://bystock.me/b27142663a?subid1=39765&subid2=457595&subid3=6502&utm_source=mixadvert&utm_medium=cpc&utm_campaign=39765&utm_term=6502&utm_content=457595#0#1#0#1
+
+// Функція checkForName(fullName, firstName) приймає два параметри та повертає буль true
+// або false - результат перевірки входження підрядка firstName у рядок fullName.
+
+// fullName - рядок, що містить повне ім'я
+// firstName - рядок, що містить ім'я для перевірки його входження в повне ім'я
+// Доповни тіло функції таким чином, щоб вона повертала результат
+// перевірки входження імені(параметр firstName), у повне ім'я (параметр fullName).
+// Врахуй, що регістр символів в параметрах fullName і firstName наперед не відомий.
+// Перед перевіркою входження не забудь прирівняти їх до однакового регістру.
+
+// function checkForName(fullName, firstName) {
+//     const upperFullName = fullName.toUpperCase();
+//      const upperFirstName = firstName.toUpperCase();
+//     if (upperFullName.includes(upperFirstName)) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//         }
+    
+// }
+
+// function checkForName(fullName, firstName) {
+//   return fullName.toUpperCase().includes(firstName.toUpperCase()) ? true : false;
+// }
+
+
+
+
+// console.log(checkForName("Jason Neis", "Jason"));  //повертає true
+// console.log(checkForName("Jason Neis", "jAsOn"));  //повертає true
+// console.log(checkForName("Jason Neis", "Jacob"));  //повертає false
+// console.log(checkForName("Caty Stars", "Caty") ); //повертає true
+// console.log(checkForName("Caty Stars", "cAtY"));  //повертає true
+// console.log(checkForName("Caty Stars", "Andromeda"));  //повертає false
+
+
+  console.log('' || 0);
