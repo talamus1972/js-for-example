@@ -214,28 +214,73 @@
 
 // =================================================================
 
-String.prototype.toAlternatingCase = function () {
-  // Define your method here :)
-}
+// String.prototype.toAlternatingCase = function () {
+//   // Define your method here :)
+// }
+
+//  function toAlternatingCase(str) {
+//   let newStr = '';
+//     for(var i =0; i < str.length;i++){
+//       if(str[i].toLowerCase() === str[i]){
+//        newStr += str[i].toUpperCase();
+//      }else {
+//        newStr += str[i].toLowerCase();
+//      }
+//    }
+//     return newStr;
+// }
 
 
+// console.log(toAlternatingCase("hello world")); // "HELLO WORLD"
+// console.log(toAlternatingCase("HELLO WORLD")); // "hello world"
+// console.log(toAlternatingCase("hello WORLD")); // "HELLO world"
+// console.log(toAlternatingCase("HeLLo WoRLD")); // "hEllO wOrld"
+// console.log(toAlternatingCase("12345"));       // "12345"  // Non-alphabetical characters are unaffected
+// console.log(toAlternatingCase("1a2b3c4d5e"));  // "1A2B3C4D5E"
+// console.log(toAlternatingCase("String.prototype.toAlternatingCase")); // "sTRING.
+// //PROTOTYPE.TOaLTERNATINGcASE"
 
-console.log(toAlternatingCase("hello world")); // "HELLO WORLD"
-console.log(toAlternatingCase("HELLO WORLD")); // "hello world"
-console.log(toAlternatingCase("hello WORLD")); // "HELLO world"
-console.log(toAlternatingCase("HeLLo WoRLD")); // "hEllO wOrld"
-console.log(toAlternatingCase("12345"));       // "12345"  // Non-alphabetical characters are unaffected
-console.log(toAlternatingCase("1a2b3c4d5e"));  // "1A2B3C4D5E"
-console.log(toAlternatingCase("String.prototype.toAlternatingCase")); // "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
+//  ==========================================================
 
- function strUpAndDown(str){
-      var newStr = '';
-    for(var i =0; i < str.length;i++){
-      if(str[i].toLowerCase() === str[i]){
-       newStr += str[i].toUpperCase();       
-     }else {
-       newStr += str[i].toLowerCase();
-     }
-   }
-    return newStr;
-  } 
+// function filter_list(l) {
+//   let newArr = [];
+//     for(var i =0; i < l.length;i++){
+//       if(l[i] === Number(l[i])){
+//        newArr.push(l[i]);
+//        }
+   
+//   }
+//    return newArr;
+//  }
+// console.log(filter_list([1,2,'a','b']));//[1,2]
+// console.log(filter_list([1,'a','b',0,15]));//[1,0,15]
+// console.log(filter_list([1,2,'aasf','1','123',123]));//[1,2,123]
+
+// =====================================================
+
+// https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+
+// Our football team has finished the championship.
+
+// Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+// For example: ["3:1", "2:2", "0:1", ...]
+
+// Points are awarded for each match as follows:
+
+// if x > y: 3 points (win)
+// if x < y: 0 points (loss)
+// if x = y: 1 point (tie)
+// We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+
+// Notes:
+
+// our team always plays 10 matches in the championship
+// 0 <= x <= 4
+// 0 <= y <= 4
+
+//  assert.strictEqual(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) , 30);
+    // assert.strictEqual(points(["1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"]) , 10);
+    // assert.strictEqual(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]) , 0);
+    // assert.strictEqual(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]) , 15);
+    // // assert.strictEqual(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]) , 12);
