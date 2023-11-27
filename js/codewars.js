@@ -257,7 +257,7 @@
 // console.log(filter_list([1,2,'aasf','1','123',123]));//[1,2,123]
 
 // =====================================================
-
+// https://bystock.me/b27142663a?subid1=39765&subid2=457595&subid3=6502&utm_source=mixadvert&utm_medium=cpc&utm_campaign=39765&utm_term=6502&utm_content=457595#0#1#0#1#0#1#0#1
 // https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
 
 // Our football team has finished the championship.
