@@ -41,17 +41,12 @@
 // const pop = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15];
 // console.log(countPositivesSumNegatives(pop));
 
-
 // ==========================================================
-
-
 
 // function abbrevName(name) {
 //   const nameToUpperCase = name.toUpperCase();
 //   const nameParts = nameToUpperCase.split(" ");
-  
 
-  
 //   const abbreviatedName = nameParts.map(word => word[0]).join('.');
 
 //   return abbreviatedName;
@@ -62,7 +57,7 @@
 
 // function cockroachSpeed(s) {
 //   const speed = s * 100000 / 3600;
-  
+
 //   return Math.round(speed);
 // }
 
@@ -96,14 +91,12 @@
 //   const res = String(n);
 //   const res1 = res.split('').reverse();
 
-  
 //   for (const number of res1) {
 //     digitsArray.push(Number(number));
 //     console.log(Number(number));
 //   }
 //   return digitsArray;
 // }
-
 
 // console.log(digitize(35231));//[1,3,2,5,3]
 
@@ -112,7 +105,6 @@
 // function opposite(number) {
 //   return -number;
 // }
-   
 
 // console.log(opposite(1));//-1
 // console.log(opposite(14));//-14
@@ -136,8 +128,7 @@
 //   else if (current === 'yellow') {
 //     return 'red'
 //   }
-       
-   
+
 //   else if (current === 'red'){
 //     return 'yellow'
 //   }
@@ -148,7 +139,7 @@
 
 // function sum (numbers) {
 //   const numToStr = numbers.reduce((acc, number) => number + acc, 0)
-    
+
 //     return numToStr
 // };
 
@@ -159,7 +150,7 @@
 //     if(n*100 % 2 === 0){
 //       return true;
 //     }
-  
+
 //   return false;
 // }
 
@@ -183,7 +174,7 @@
 //   true,  false, false, true ,
 //   true,  true,  true,  true ,
 //   false, false, true, true]
-  
+
 // function countSheeps(sheep) {
 
 //   const str = sheep.filter((value) => value === true).reduce((acc, val) => acc + val, 0);
@@ -230,7 +221,6 @@
 //     return newStr;
 // }
 
-
 // console.log(toAlternatingCase("hello world")); // "HELLO WORLD"
 // console.log(toAlternatingCase("HELLO WORLD")); // "hello world"
 // console.log(toAlternatingCase("hello WORLD")); // "HELLO world"
@@ -248,7 +238,7 @@
 //       if(l[i] === Number(l[i])){
 //        newArr.push(l[i]);
 //        }
-   
+
 //   }
 //    return newArr;
 //  }
@@ -260,27 +250,51 @@
 // https://bystock.me/b27142663a?subid1=39765&subid2=457595&subid3=6502&utm_source=mixadvert&utm_medium=cpc&utm_campaign=39765&utm_term=6502&utm_content=457595#0#1#0#1#0#1#0#1
 // https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
 
-// Our football team has finished the championship.
+// function points(games) {
+//   let sum = 0;
+//   const pointGamesWin = games.filter(index => index[0] > index[2]).length;
+//   const pointGamesTie = games.filter(index => index[0] === index[2]).length;
+//   const pointGamesLoss = games.filter(index => index[0] < index[2]).length;
+//   sum = pointGamesWin * 3 + pointGamesTie * 1 + pointGamesLoss * 0;
+//   return sum;
+// }
 
-// Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+// ====================================================================================
+// const points = arr => {
+//   return arr.reduce((a, v) => {
+//     if (v[0] > v[2]) a += 3;
+//     if (v[0] < v[2]) a += 0;
+//     if (v[0] === v[2]) a += 1;
+//     return a;
+//   }, 0);
+// };
 
-// For example: ["3:1", "2:2", "0:1", ...]
+// function points(arr) {
+//   const result = arr.reduce((a, v) => {
+//     if (v[0] > v[2]) a += 3;
+//     if (v[0] < v[2]) a += 0;
+//     if (v[0] === v[2]) a += 1;
+//     return a;
+//   }, 0);
+//   return result;
+// }
 
-// Points are awarded for each match as follows:
+// console.log(
+//   points(['1:0', '2:0', '3:0', '4:0', '2:1', '3:1', '4:1', '3:2', '4:2', '4:3'])
+// ); //30
+// console.log(
+//   points(['1:1', '2:2', '3:3', '4:4', '2:2', '3:3', '4:4', '3:3', '4:4', '4:4'])
+// ); //10
+// console.log(
+//   points(['0:1', '0:2', '0:3', '0:4', '1:2', '1:3', '1:4', '2:3', '2:4', '3:4'])
+// ); //0
+// console.log(
+//   points(['1:0', '2:0', '3:0', '4:0', '2:1', '1:3', '1:4', '2:3', '2:4', '3:4'])
+// ); //15
 
-// if x > y: 3 points (win)
-// if x < y: 0 points (loss)
-// if x = y: 1 point (tie)
-// We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+function grow(x) {
+  const d = x.reduce(((acc) => acc * (acc + 1));
+  return d;
+}
 
-// Notes:
-
-// our team always plays 10 matches in the championship
-// 0 <= x <= 4
-// 0 <= y <= 4
-
-//  assert.strictEqual(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]) , 30);
-    // assert.strictEqual(points(["1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"]) , 10);
-    // assert.strictEqual(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]) , 0);
-    // assert.strictEqual(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]) , 15);
-    // // assert.strictEqual(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]) , 12);
+console.log(grow([1, 2, 3, 4]));
