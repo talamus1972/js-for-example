@@ -292,9 +292,9 @@
 //   points(['1:0', '2:0', '3:0', '4:0', '2:1', '1:3', '1:4', '2:3', '2:4', '3:4'])
 // ); //15
 
-function grow(x) {
-  const d = x.reduce(((acc) => acc * (acc + 1));
-  return d;
-}
+// function grow(x) {
+//   const d = x.reduce(((acc) => acc * (acc + 1));
+//   return d;
+// }
 
-console.log(grow([1, 2, 3, 4]));
+// console.log(grow([1, 2, 3, 4]));
